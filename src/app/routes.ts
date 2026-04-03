@@ -1,0 +1,46 @@
+import { createBrowserRouter } from "react-router";
+import { Onboarding } from "./screens/Onboarding";
+import { Login } from "./screens/Login";
+import { GuideRegistration } from "./screens/GuideRegistration";
+import { TravelerHome } from "./screens/TravelerHome";
+import { GuideProfile } from "./screens/GuideProfile";
+import { Booking } from "./screens/Booking";
+import { Payment } from "./screens/Payment";
+import { GuideDashboard } from "./screens/GuideDashboard";
+import { Reels } from "./screens/Reels";
+import { MapScreen } from "./screens/MapScreen";
+import { GroupTours } from "./screens/GroupTours";
+import { GroupTourDetail } from "./screens/GroupTourDetail";
+import { Messages } from "./screens/Messages";
+import { Profile } from "./screens/Profile";
+import { Notifications } from "./screens/Notifications";
+import { SavedGuides } from "./screens/SavedGuides";
+import { MyBookings } from "./screens/MyBookings";
+import { AccountSettings } from "./screens/AccountSettings";
+import { SafetyPrivacy } from "./screens/SafetyPrivacy";
+import { HelpSupport } from "./screens/HelpSupport";
+import { Friends } from "./screens/Friends";
+
+export const router = createBrowserRouter([
+  { path: "/", Component: Onboarding },
+  { path: "/login", Component: Login },
+  { path: "/guide-registration", Component: GuideRegistration },
+  { path: "/home", Component: TravelerHome },
+  { path: "/guide/:id", Component: GuideProfile },
+  { path: "/booking/:id", Component: Booking },
+  { path: "/payment/:guideId", Component: Payment },
+  { path: "/dashboard", Component: GuideDashboard },
+  { path: "/reels", Component: Reels },
+  { path: "/map", Component: MapScreen },
+  { path: "/group-tours", Component: GroupTours },
+  { path: "/group-tour/:id", Component: GroupTourDetail },
+  { path: "/messages", Component: Messages },
+  { path: "/profile", Component: Profile },
+  { path: "/notifications", Component: Notifications },
+  { path: "/saved-guides", Component: SavedGuides },
+  { path: "/my-bookings", Component: MyBookings },
+  { path: "/account-settings", Component: AccountSettings },
+  { path: "/safety-privacy", Component: SafetyPrivacy },
+  { path: "/help-support", Component: HelpSupport },
+  { path: "/friends", Component: Friends },
+]);
